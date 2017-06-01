@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+
+    <EditText
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/oldpwd_edit_name"
+        android:hint="enter old password" />
+    <EditText
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/newpwd_edit_name"
+        android:layout_below="@+id/oldpwd_edit_name"
+        android:hint="enter new password"
+        />
+    <EditText
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/confirmpwd_edit_pwd"
+        android:hint="confirm new password"
+        android:layout_below="@+id/newpwd_edit_name"
+        />
+
+
+
+    <TextView
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="20sp"
+        android:id="@+id/oldemail_edit"
+        android:layout_below="@+id/confirmpwd_edit_pwd"
+        android:layout_centerHorizontal="true"
+        android:text="enter old email address"
+        />
+
+
+
+    <EditText
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/newemail_edit"
+        android:hint="enter new email address"
+        android:layout_below="@+id/oldemail_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        android:id="@+id/clear_btn"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/btn_selector"
+        android:onClick="clear"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/newemail_edit"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/resetpwd_btn_cancel"
+        android:onClick="confirm"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/btn_selector"
+        android:layout_below="@+id/clear_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

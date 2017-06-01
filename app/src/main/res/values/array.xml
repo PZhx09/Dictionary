@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dictionary">
+        <item>海词词典</item>
+        <item>韦氏词典</item>
+        <item>有道词典</item>
+        <item>百度词典</item>
+        <item>谷歌词典</item>
+    </string-array>
+    <array name="dictionary1">海词词典</array>
+    <array name="dictionary2">韦氏词典</array>
+    <array name="dictionary3">有道词典</array>
+    <array name="dictionary4">百度词典</array>
+    <array name="dictionary5">谷歌词典</array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fly_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.administrator.dictionary.FlyPageActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flypage"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+
+        android:padding="12dip"
+        android:textSize="48sp"
+        android:typeface="sans"
+
+        android:textColor="#ff5722"
+        android:textStyle="bold"
+        android:text="畅词词典" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dip"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="你离学霸只差一个APP的距离" />
+    </FrameLayout>
+
+
+</RelativeLayout>

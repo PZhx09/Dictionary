@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+<RelativeLayout android:layout_width="match_parent"
+              android:layout_height="50dp">
+    <ImageView android:layout_width="wrap_content"
+               android:id="@+id/imageBasicSet"
+               android:layout_height="match_parent"
+               android:layout_alignParentLeft="true"
+               android:src="@drawable/basicset"
+               android:layout_marginLeft="20dp"
+    />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:src="@drawable/info"
+               android:layout_alignLeft="@id/imageBasicSet"
+               android:layout_marginLeft="340dp"
+    />
+</RelativeLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView_basicSet"
+              android:text="基本设置"
+              android:textSize="15dp"
+              android:layout_marginLeft="20dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLine" />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <TextView android:layout_width="wrap_content"
+                   android:id="@+id/textView_EnglishKeyboard"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentLeft="true"
+                  android:text="优先使用英语键盘"
+                 android:layout_marginTop="10dp"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="20dp"
+                   android:src="@drawable/basicset"
+                   android:layout_marginLeft="20dp"
+        />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/yes"
+                   android:layout_alignLeft="@id/textView_EnglishKeyboard"
+                   android:layout_marginLeft="320dp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/textView_autoCheck"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:text="自动拼写校正"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="20dp"
+                  android:src="@drawable/basicset"
+                  android:layout_marginLeft="20dp"
+        />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/yes"
+                   android:layout_alignLeft="@id/textView_autoCheck"
+                   android:layout_marginLeft="320dp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorLine" />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/textView_landscape"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:text="允许横屏"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="20dp"
+                  android:src="@drawable/basicset"
+                  android:layout_marginLeft="20dp"
+        />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/yes"
+                   android:layout_alignLeft="@id/textView_landscape"
+                   android:layout_marginLeft="320dp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorLine" />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView_advanceSet"
+              android:text="进阶设置"
+              android:textSize="15dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLine" />
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+    >
+<LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/LinearLayout_trans"
+              android:orientation="vertical"
+>
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/textView_transData"
+              android:layout_height="match_parent"
+              android:layout_alignParentLeft="true"
+              android:text="允许移动数据"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorBlack"
+              android:textSize="20dp"
+              android:layout_marginLeft="20dp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView_Set"
+              android:text="若关闭此选项，软件仅用WiFi进行在线查询"
+              android:textSize="15dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="5dp"
+    />
+
+</LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/yes"
+                   android:layout_alignLeft="@id/LinearLayout_trans"
+                   android:layout_marginLeft="340dp"
+                   android:layout_marginTop="20dp"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLine" />
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/LinearLayout_vocubalary"
+                  android:orientation="vertical"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/textView_autoJoin"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentLeft="true"
+                  android:text="自动加入生词本"
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="20dp"
+                  android:layout_marginLeft="20dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/textView_vocu"
+                  android:text="将查询的单词自动加入生词本中"
+                  android:textSize="15dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+        />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/yes"
+               android:layout_alignLeft="@id/LinearLayout_vocubalary"
+               android:layout_marginLeft="340dp"
+               android:layout_marginTop="20dp"
+    />
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLine" />
+    <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/textView_clearCache"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:text="清空缓存"
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/colorBlack"
+                  android:textSize="20dp"
+                  android:layout_marginLeft="20dp"
+        />
+      <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10MB"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+      />
+    </LinearLayout>
+
+</LinearLayout>

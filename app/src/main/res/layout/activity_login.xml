@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.administrator.dictionary.login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/icon_meitu_1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="你离学霸只差一个APP的距离"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#424242"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_view"
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"
+    >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:id="@+id/login_btn_register"
+            android:onClick="resetpwd"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_selector"
+            android:textSize="20dp"
+            android:layout_below="@+id/login_btn_login"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/login_edit_pwd"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:hint="@string/pwdName"
+            android:layout_below="@+id/login_edit_account"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:id="@+id/login_edit_account"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:hint="@string/userName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp" />
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/login_btn_login"
+            android:onClick="finish_login"
+            android:background="@drawable/btn_selector"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/login_edit_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/login_success_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="62.0px"
+        android:background="#ff3f3f3f"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/login_success_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff3f3f3f"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

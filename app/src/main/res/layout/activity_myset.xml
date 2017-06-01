@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingTop="@dimen/activity_vertical_margin">
+<LinearLayout android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+              android:id="@+id/LinearLayout_login"
+>
+    <ImageView
+        android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/mysetlogo"
+    />
+</LinearLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelativeLayout_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/LinearLayout_login"
+    >
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lastLoginTime"
+          android:textColor="@color/colorFont"
+          android:text="欢迎你！"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:textSize="20dp"
+          android:layout_marginLeft="10dp"
+/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/colorFont"
+                  android:layout_below="@+id/lastLoginTime"
+                  android:text="2017.1.1"
+                  android:layout_marginTop="15dp"
+                  android:layout_alignParentLeft="true"
+                  android:textSize="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:id="@+id/txttime"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:textColor="@color/colorFont"
+                  android:text="已查单词"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:textSize="20dp"
+                  android:layout_marginLeft="10dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/colorFont"
+                  android:layout_below="@+id/lastLoginTime"
+                  android:id="@+id/numWords"
+                  android:text="100个"
+                  android:layout_marginTop="15dp"
+                  android:layout_alignParentRight="true"
+                  android:textSize="20dp"
+                  android:layout_marginRight="15dp"
+        />
+
+    </RelativeLayout>
+   <LinearLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginTop="10dp"
+                 android:layout_below="@+id/RelativeLayout_info"
+   >
+<TextView android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:id="@+id/txtperson"
+          android:text="个人信息修改"
+          android:textSize="20dp"
+          android:textColor="@color/colorBlack"
+          android:layout_marginLeft="20dp"
+          android:onClick="personinfo"
+/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="@color/colorLine" />
+       <TextView android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="清空历史记录"
+                 android:id="@+id/clear_history"
+                 android:textSize="20dp"
+                 android:textColor="@color/colorBlack"
+                 android:layout_marginLeft="20dp"
+                 android:onClick="clearhistory"
+       />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="@color/colorLine" />
+       <TextView android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/clear_vocabulary"
+                 android:text="清空生词本"
+                 android:textSize="20dp"
+                 android:textColor="@color/colorBlack"
+                 android:layout_marginLeft="20dp"
+                 android:onClick="clearvocabulary"
+       />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="@color/colorLine" />
+       <TextView android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/txtabout"
+                 android:text="关于本软件"
+                 android:textSize="20dp"
+                 android:textColor="@color/colorBlack"
+                 android:layout_marginLeft="20dp"
+                 android:onClick="about"
+
+       />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="@color/colorLine" />
+       <TextView android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="退出程序"
+                 android:textSize="20dp"
+                 android:id="@+id/txtexit"
+                 android:textColor="@color/colorBlack"
+                 android:layout_marginLeft="20dp"
+                 android:onClick="exit"
+
+       />
+   </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33691e"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/navigation" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_above="@+id/navigation"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:id="@+id/navigation_dict"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        android:title="词典" />
+    <item
+        android:id="@+id/navigation_tran"
+        android:icon="@drawable/ic_translate"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="翻译" />
+    <item
+        android:id="@+id/navigation_stud"
+        android:icon="@drawable/ic_library_books"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="学习" />
+    <item
+        android:id="@+id/navigation_voca"
+        android:icon="@drawable/ic_book"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="生词本" />
+
+    <item
+        android:id="@+id/navigation_index"
+        android:icon="@drawable/ic_person"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="我的" />
+
+
+
+
+
+
+</menu>

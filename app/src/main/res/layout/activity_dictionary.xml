@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.dictionary.dictionary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/LinearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="1"
+            android:hint="Words or Phrases"
+            android:ems="10"
+            android:id="@+id/edt_word" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_shortcut_search"
+            android:id="@+id/Btn_search"
+            android:layout_toRightOf="@+id/edt_word"
+            android:layout_toEndOf="@+id/edt_word"
+            android:alpha="0.5"
+            android:onClick="find" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:text="历史记录"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_alignParentStart="true"
+        android:textSize="28sp"
+        android:id="@+id/textView2" />
+
+    >
+    <ListView
+        android:layout_below="@+id/textView2"
+        android:id="@+id/list_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#0000"
+        android:layout_above="@+id/navigation">
+    </ListView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33691e"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>
